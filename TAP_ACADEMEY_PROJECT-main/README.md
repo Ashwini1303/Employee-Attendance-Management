@@ -504,7 +504,3 @@ app.use(cors({
 }));
 ```
 
----
-
-**Happy Coding! 🚀**
-# TAP_ACADEMEY_PROJECT

@@ -1,0 +1,130 @@
+.all-attendance-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.filters-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.filters-card h2 {
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.filters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-item label {
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.filter-item input,
+.filter-item select {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.filter-item input:focus,
+.filter-item select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.filter-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+.results-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-card h2 {
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.attendance-table th {
+  background-color: var(--light-bg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.attendance-table tbody tr:hover {
+  background-color: var(--light-bg);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 15px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-badge.present {
+  background-color: #10b981;
+}
+
+.status-badge.late {
+  background-color: #f59e0b;
+}
+
+.status-badge.absent {
+  background-color: #ef4444;
+}
+
+.status-badge.half-day {
+  background-color: #f97316;
+}

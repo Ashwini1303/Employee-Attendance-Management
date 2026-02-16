@@ -1,0 +1,118 @@
+.dashboard-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.stat-card.purple {
+  border-color: #8b5cf6;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.chart-card {
+  min-height: 400px;
+}
+
+.employees-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.employee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.employee-item.late {
+  border-color: var(--warning-color);
+}
+
+.employee-item.absent {
+  border-color: var(--danger-color);
+}
+
+.employee-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.employee-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.employee-id {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.employee-dept {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.employee-time {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.employee-status .status-badge {
+  padding: 6px 14px;
+  border-radius: 15px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.red {
+  background-color: var(--danger-color);
+}
+
+.department-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.department-card {
+  background-color: var(--light-bg);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border-top: 4px solid var(--primary-color);
+}
+
+.department-card h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.dept-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 10px 0;
+}
+
+.dept-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}

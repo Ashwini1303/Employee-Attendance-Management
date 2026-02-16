@@ -1,0 +1,166 @@
+.mark-attendance-container {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.attendance-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.time-display {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.current-time {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.current-date {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.user-info h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.user-info p {
+  color: var(--text-secondary);
+  margin: 5px 0;
+}
+
+.attendance-actions {
+  text-align: center;
+}
+
+.action-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.action-section h3 {
+  color: var(--text-primary);
+  font-size: 1.3rem;
+}
+
+.btn-check-in,
+.btn-check-out {
+  padding: 18px 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.btn-check-in {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.btn-check-in:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+.btn-check-out {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+}
+
+.btn-check-out:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
+}
+
+.btn-icon {
+  font-size: 1.5rem;
+}
+
+.checked-in-info {
+  background-color: var(--light-bg);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.checked-in-info p {
+  margin: 10px 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.info-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.info-badge.success {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-present {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.status-late {
+  color: var(--warning-color);
+  font-weight: 600;
+}
+
+.status-half-day {
+  color: #f97316;
+  font-weight: 600;
+}
+
+.completion-message {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.completion-message h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.completion-message p {
+  color: white;
+  opacity: 0.9;
+}

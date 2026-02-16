@@ -504,22 +504,6 @@ app.use(cors({
 }));
 ```
 
-## 📝 License
-
-This project is licensed under the MIT License.
-
-## 👨‍💻 Author
-
-Created as part of Tap Academy Project
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-## 📞 Support
-
-For support, email your-email@example.com or create an issue in the repository.
-
 ---
 
 **Happy Coding! 🚀**
